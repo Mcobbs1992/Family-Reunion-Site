@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cobbs Family Reunion 2025</title>
+
+  <!-- Optional Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #facc15;
+      --bg: #f1f5f9;
+      --text: #0f172a;
+      --muted: #64748b;
+      --white: #ffffff;
+      --max-width: 1100px;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #e0f2fe 0, #f1f5f9 45%, #e2e8f0 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(241, 245, 249, 0.9);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.8rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-logo {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .nav-logo span {
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: rgba(14, 116, 144, 0.12);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+    }
+
+    .nav-links a:hover {
+      background: rgba(15, 118, 110, 0.09);
+      transform: translateY(-1px);
+    }
+
+    .nav .btn-small {
+      font-size: 0.85rem;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.5rem 1.2rem 3rem;
+    }
+
+    section {
+      margin: 2.5rem 0;
+    }
+
+    /* Hero */
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.2fr);
+      gap: 2rem;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+
+    .hero-left {
+      padding: 1.4rem;
+      border-radius: 24px;
+      background: rgba(248, 250, 252, 0.9);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .hero-title {
+      font-size: clamp(1.9rem, 4vw, 2.5rem);
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-title span {
+      color: var(--primary);
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--muted);
+      margin-bottom: 1.1rem;
+      max-width: 32rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.85rem;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.03);
+      border: 1px solid rgba(148, 163, 184, 0.55);
+    }
+
+    .hero-pill strong {
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .hero-right {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .card {
+      background: rgba(248, 250, 252, 0.96);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1rem 1.1rem;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.6rem;
+    }
+
+    .badge-soft {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15, 118, 110, 0.08);
+      color: var(--primary-dark);
+      border: 1px solid rgba(45, 212, 191, 0.6);
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .card-sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .schedule-list {
+      list-style: none;
+      margin-top: 0.4rem;
+    }
+
+    .schedule-list li {
+      font-size: 0.85rem;
+      padding: 0.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      border-bottom: 1px dashed rgba(148, 163, 184, 0.5);
+    }
+
+    .schedule-list li:last-child {
+      border-bottom: none;
+    }
+
+    .schedule-label {
+      font-weight: 500;
+    }
+
+    .schedule-time {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .mini-list {
+      list-style: disc;
+      padding-left: 1.1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* Buttons */
+
+    .btn,
+    .btn-small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      padding: 0.7rem 1.4rem;
+      transition: background 0.18s ease, color 0.18s ease,
+        transform 0.12s ease, box-shadow 0.18s ease;
+    }
+
+    .btn-small {
+      padding: 0.45rem 0.9rem;
+      font-size: 0.75rem;
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--white);
+      box-shadow: 0 12px 25px rgba(15, 118, 110, 0.35);
+    }
+
+    .btn.primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 30px rgba(15, 118, 110, 0.4);
+    }
+
+    .btn.outline {
+      background: rgba(248, 250, 252, 0.95);
+      color: var(--primary-dark);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+    }
+
+    .btn.outline:hover {
+      background: rgba(15, 118, 110, 0.03);
+      transform: translateY(-1px);
+    }
+
+    .btn-icon {
+      font-size: 1rem;
+    }
+
+    /* Sections */
+
+    .section-header {
+      margin-bottom: 1rem;
+    }
+
+    .section-eyebrow {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 32rem;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+      gap: 1.6rem;
+      align-items: start;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+    }
+
+    .pill {
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.03);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+    }
+
+    /* Tickets */
+
+    .ticket-card {
+      border-radius: 18px;
+      padding: 1.3rem 1.2rem;
+      background: radial-gradient(circle at top right, #facc15 0, #f97316 22%, #0f766e 70%, #0f172a 100%);
+      color: var(--white);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ticket-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.16) 0, transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(15, 23, 42, 0.41) 0, transparent 60%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .ticket-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .ticket-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      align-items: baseline;
+      margin-bottom: 0.6rem;
+    }
+
+    .ticket-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .ticket-price {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .ticket-price span {
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
+    .ticket-details {
+      font-size: 0.85rem;
+      opacity: 0.95;
+      margin-bottom: 0.7rem;
+    }
+
+    .ticket-perks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .ticket-perks span {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.3);
+      backdrop-filter: blur(2px);
+    }
+
+    .ticket-note {
+      font-size: 0.8rem;
+      opacity: 0.9;
+      margin-top: 0.4rem;
+    }
+
+    .alt-payment {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    /* FAQ */
+
+    .faq-list {
+      display: grid;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .faq-item {
+      padding: 0.8rem 0.9rem;
+      border-radius: var(--radius-md);
+      background: rgba(248, 250, 252, 0.95);
+      border: 1px solid rgba(148, 163, 184, 0.45);
+    }
+
+    .faq-q {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-a {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* Contact */
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+      gap: 1.4rem;
+      padding: 1.2rem 1.1rem;
+      border-radius: 20px;
+      background: rgba(15, 23, 42, 0.96);
+      color: var(--white);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-card p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .contact-meta {
+      margin-top: 0.7rem;
+      font-size: 0.85rem;
+    }
+
+    .contact-meta div {
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-meta strong {
+      font-weight: 600;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+    }
+
+    .field {
+      display: grid;
+      gap: 0.25rem;
+    }
+
+    .field label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.8;
+    }
+
+    .field input,
+    .field textarea {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      padding: 0.55rem 0.8rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      background: rgba(15, 23, 42, 0.8);
+      color: var(--white);
+      outline: none;
+      transition: border 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+    }
+
+    .field textarea {
+      border-radius: 12px;
+      min-height: 70px;
+      resize: vertical;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: rgba(148, 163, 184, 0.9);
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: #22c55e;
+      box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.6);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.2rem 2.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(148, 163, 184, 0.4);
+      padding-top: 1.2rem;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 900px) {
+      .hero,
+      .grid-two,
+      .contact-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero {
+        margin-top: 1rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      main {
+        padding-inline: 1rem;
+      }
+
+      footer {
+        padding-inline: 1rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-left {
+        padding: 1rem;
+      }
+
+      .ticket-card {
+        padding: 1.1rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="nav">
+      <div class="nav-logo">
+        Cobbs Reunion
+        <span>2025</span>
+      </div>
+      <div class="nav-links">
+        <a href="#details">Details</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#tickets" class="btn-small primary">Buy Tickets</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / LANDING -->
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Cobbs • Johnson • Williams Family
+        </div>
+        <h1 class="hero-title">
+          <span>Family Reunion 2025</span><br />
+          Where generations come together.
+        </h1>
+        <p class="hero-subtitle">
+          Join us for a weekend of laughter, food, photos, and memories you’ll talk about for years. 
+          Let’s celebrate our roots and pour into the next generation — together.
+        </p>
+
+        <div class="hero-meta">
+          <div class="hero-pill">
+            <strong>📅 July 18–20, 2025</strong>
+            <span>Friday–Sunday</span>
+          </div>
+          <div class="hero-pill">
+            <strong>📍 Atlanta, GA</strong>
+            <span>Piedmont Park & Family Center</span>
+          </div>
+          <div class="hero-pill">
+            <strong>🎟️ Early Bird</strong>
+            <span>Ends May 31</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#tickets" class="btn primary">
+            Buy Tickets
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="#details" class="btn outline">
+            View Schedule
+          </a>
+          <p class="hero-note">
+            Secure your spot now — space is limited for some activities.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Weekend Highlights</div>
+              <div class="card-sub">Three days of connection & fun</div>
+            </div>
+            <span class="badge-soft">All ages welcome</span>
+          </div>
+          <ul class="schedule-list">
+            <li>
+              <span class="schedule-label">Friday • Meet & Greet</span>
+              <span class="schedule-time">6:00 pm – 9:00 pm</span>
+            </li>
+            <li>
+              <span class="schedule-label">Saturday • Picnic & Games</span>
+              <span class="schedule-time">11:00 am – 5:00 pm</span>
+            </li>
+            <li>
+              <span class="schedule-label">Saturday • Banquet & Program</span>
+              <span class="schedule-time">7:00 pm – 10:00 pm</span>
+            </li>
+            <li>
+              <span class="schedule-label">Sunday • Worship & Farewell</span>
+              <span class="schedule-time">10:00 am – 12:00 pm</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">What to expect</div>
+          <ul class="mini-list">
+            <li>Family tree wall & photo station</li>
+            <li>Kids games, prizes, and outdoor fun</li>
+            <li>T-shirts & swag (pre-order with your ticket)</li>
+            <li>Honoring our elders & remembering loved ones</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section id="details">
+      <div class="section-header">
+        <div class="section-eyebrow">Event Details</div>
+        <h2 class="section-title">Everything you need to know</h2>
+        <p class="section-subtitle">
+          We’ve planned a full weekend so everyone—from toddlers to great-grandparents—has something to enjoy.
+        </p>
+      </div>
+
+      <div class="grid-two">
+        <div>
+          <div class="card">
+            <h3 class="card-title">Locations</h3>
+            <p class="card-sub">
+              Exact addresses will be emailed after you register for security and privacy.
+            </p>
+            <ul class="mini-list" style="margin-top: 0.6rem;">
+              <li><strong>Friday:</strong> Welcome mixer at a private event space near downtown Atlanta.</li>
+              <li><strong>Saturday (day):</strong> Picnic & games at a local park with pavilion, grills, and playground.</li>
+              <li><strong>Saturday (evening):</strong> Semi-formal banquet with DJ, program, and awards.</li>
+              <li><strong>Sunday:</strong> Optional worship service and farewell brunch.</li>
+            </ul>
+
+            <div class="pill-list">
+              <span class="pill">Free parking</span>
+              <span class="pill">Indoor & outdoor events</span>
+              <span class="pill">Kid-friendly</span>
+              <span class="pill">Wheelchair accessible</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <h3 class="card-title">Travel & Lodging</h3>
+            <p class="card-sub">
+              Family members are responsible for their own travel and hotel arrangements.
+            </p>
+            <ul class="mini-list" style="margin-top: 0.6rem;">
+              <li>Closest airport: <strong>Hartsfield-Jackson Atlanta International Airport (ATL)</strong>.</li>
+              <li>We recommend booking your hotel by <strong>June 15</strong> to get the best rates.</li>
+              <li>Look for options within 15–20 minutes of downtown Atlanta.</li>
+            </ul>
+            <p style="font-size:0.8rem; color:var(--muted); margin-top:0.6rem;">
+              Need help with travel planning? Reach out using the contact form below and a committee member will follow up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKETS -->
+    <section id="tickets">
+      <div class="section-header">
+        <div class="section-eyebrow">Tickets</div>
+        <h2 class="section-title">Reserve your spot</h2>
+        <p class="section-subtitle">
+          Your ticket helps cover food, venue costs, decorations, activities, and reunion keepsakes.
+        </p>
+      </div>
+
+      <div class="grid-two">
+        <div>
+          <div class="ticket-card" aria-labelledby="ticket-heading">
+            <div class="ticket-inner">
+              <div class="ticket-header">
+                <div>
+                  <div id="ticket-heading" class="ticket-title">All-Weekend Family Pass</div>
+                  <div style="font-size:0.8rem; opacity:0.9;">Access to all events for one household</div>
+                </div>
+                <div class="ticket-price">
+                  $125 <span>/ household</span>
+                </div>
+              </div>
+
+              <p class="ticket-details">
+                Includes Friday mixer, Saturday picnic & banquet, and Sunday farewell for up to
+                <strong>2 adults + 3 children</strong> in the same household.
+              </p>
+
+              <div class="ticket-perks">
+                <span>All meals included</span>
+                <span>Reunion badge</span>
+                <span>Group photo access</span>
+                <span>Kids activities</span>
+              </div>
+
+              <!-- IMPORTANT: REPLACE THE href BELOW WITH YOUR REAL PAYMENT LINK -->
+              <!-- Examples:
+                   - PayPal Payment Link
+                   - Stripe Payment Link
+                   - Cash App Pay Link
+              -->
+
+              <a
+                href="https://www.paypal.com/" 
+                class="btn primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pay for Reunion Tickets
+                <span class="btn-icon">💳</span>
+              </a>
+
+              <p class="ticket-note">
+                After you pay, please include your <strong>full name</strong>, 
+                <strong>number of guests</strong>, and <strong>shirt sizes</strong> in the payment notes,
+                or email the details to the committee (see contact section).
+              </p>
+            </div>
+          </div>
+
+          <p class="alt-payment">
+            Prefer another way to pay (Cash App, Zelle, etc.)?  
+            <br />Contact the committee using the form below and we’ll send you alternate payment options.
+          </p>
+        </div>
+
+        <div>
+          <div class="card">
+            <h3 class="card-title">How online payment works</h3>
+            <ol class="mini-list">
+              <li>Click the <strong>“Pay for Reunion Tickets”</strong> button.</li>
+              <li>Complete payment through the secure payment page.</li>
+              <li>Add your name, number of guests, and ages in the notes.</li>
+              <li>Save your receipt — we’ll also email you a confirmation.</li>
+            </ol>
+            <p style="font-size:0.8rem; color:var(--muted); margin-top:0.6rem;">
+              The payment system is hosted by your chosen provider (e.g., PayPal/Stripe), 
+              so your card details are never stored on this site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-header">
+        <div class="section-eyebrow">FAQ</div>
+        <h2 class="section-title">Frequently asked questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">Do I need a ticket for each person?</div>
+          <div class="faq-a">
+            The All-Weekend Family Pass covers one household (up to 2 adults + 3 children). 
+            If you have a larger household or special situation, please contact the committee.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">What should we wear?</div>
+          <div class="faq-a">
+            Friday and Saturday daytime events are casual and comfortable. 
+            Saturday evening banquet is semi-formal. Reunion T-shirts will be available for pre-order.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Can I still come if I don’t buy tickets online?</div>
+          <div class="faq-a">
+            Yes, but we strongly prefer advance payment so we can plan food and seating. 
+            Limited on-site payments may be available, but are not guaranteed.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Are refunds available?</div>
+          <div class="faq-a">
+            Because we pay vendors in advance, tickets are generally non-refundable. 
+            If something unexpected comes up, please reach out to the committee to discuss options.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header">
+        <div class="section-eyebrow">Contact</div>
+        <h2 class="section-title">Contact the reunion committee</h2>
+        <p class="section-subtitle">
+          Have questions about travel, payments, or special accommodations? We’re here to help.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <h3>Reunion Committee</h3>
+          <p>
+            Reach out and a family member from the planning committee will respond within 2–3 days.
+          </p>
+
+          <div class="contact-meta">
+            <div><strong>Primary contact:</strong> Aunt Lisa</div>
+            <div><strong>Email:</strong> cobbsfamilyreunion@example.com</div>
+            <div><strong>Phone (text):</strong> (555) 123-4567</div>
+          </div>
+
+          <p style="font-size:0.78rem; margin-top:0.7rem; opacity:0.8;">
+            Tip: You can also connect with family on our private Facebook group for updates, polls, and room-sharing info.
+          </p>
+        </div>
+
+        <!-- Note: This is a static form. You can connect it to a service like Formspree, Google Forms, etc. -->
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+        >
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="First & last name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="_replyto" type="email" required placeholder="you@example.com" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Ask us anything about tickets, travel, or special needs..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn primary">
+            Send Message
+          </button>
+          <p style="font-size:0.75rem; opacity:0.7;">
+            By submitting this form, you agree to be contacted by the reunion committee about this event only.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2025 Cobbs Family Reunion Committee</div>
+    <div>“We are our ancestors’ wildest dreams.”</div>
+  </footer>
+
+  <script>
+    // Smooth scroll for same-page links
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        const targetId = this.getAttribute("href");
+        const target = document.querySelector(targetId);
+        if (!target) return;
+        e.preventDefault();
+        const offset = 70; // header height
+        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
+</body>
+</html>

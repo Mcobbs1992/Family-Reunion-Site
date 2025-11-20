@@ -31,12 +31,14 @@
     }
 
 body {
-  background: radial-gradient(circle at 20% 20%, #ff6b6b 0%, transparent 60%),
-              radial-gradient(circle at 80% 30%, #ffd93d 0%, transparent 60%),
-              radial-gradient(circle at 70% 80%, #6bcb77 0%, transparent 60%),
-              radial-gradient(circle at 30% 90%, #4d96ff 0%, transparent 60%);
-  background-color: #ffffff;
-  background-blend-mode: screen;
+  background: linear-gradient(120deg, #ff0000, #ffa600, #ffee00, #00ff8c, #00c2ff, #6a00ff, #d000ff);
+  background-size: 500% 500%;
+  animation: rainbowMove 18s ease infinite;
+}
+@keyframes rainbowMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
     a {
